@@ -1,0 +1,221 @@
+header {
+  max-width: 100%;
+  height: 100vh;
+  background-image: url("/images/image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+  nav {
+    background-color: $dark_blue;
+    width: 100%;
+    height: 110px;
+    color: #fff;
+    & > .container {
+      padding-top: 12px;
+      position: relative;
+      svg {
+        fill: $yellow !important;
+        font-size: 14px;
+        text-align: center;
+        margin-left: 12px;
+        & {
+          @include break_point(xsmobil) {
+            font-size: 10px;
+            margin-left: 0;
+          }
+        }
+      }
+      &::after {
+        content: "";
+        width: 97%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        border-bottom: 2px solid #6c7284;
+        transform: translateX(-50%);
+      }
+    }
+
+    .nav_icon {
+      width: 100%;
+      font-size: 14px;
+      height: 50%;
+      & {
+        @include break_point(xsmobil) {
+          width: 100;
+          display: flex;
+          justify-content: center !important;
+          align-items: center !important;
+          font-size: 10px;
+          svg {
+            font-size: 10px;
+          }
+        }
+        @include break_point(mobil) {
+          width: 100;
+          display: flex;
+          justify-content: center !important;
+          align-items: center !important;
+          font-size: 10px;
+          svg {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    .icon_left {
+      .phon {
+        margin-left: -26px;
+      }
+      .mail {
+        margin-left: 5px;
+      }
+    }
+    .social_media_links_center svg {
+      display: inline-block;
+      margin-left: 12px;
+    }
+  }
+  .nave_logo_links {
+    max-height: 65px;
+    .logo {
+      margin: 0;
+      padding: 0;
+      & {
+        @include break_point(xsmobil) {
+          margin-top: 5px;
+          margin-top: 20px;
+          text-align: center;
+          width: 100px;
+        }
+        @include break_point(mobil) {
+          margin-top: 5px;
+          margin-top: 20px;
+          text-align: center;
+          width: 100px;
+        }
+      }
+      h4 {
+        margin: 0;
+        margin-top: -18px;
+        padding: 0;
+        .one,
+        .two {
+          color: $yellow;
+        }
+        .two {
+          display: inline-block;
+          margin-left: -7px;
+        }
+      }
+      h6 {
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .links {
+      &.open {
+        background-color: #6c7284;
+        width: 50%;
+        z-index: 1000000;
+        margin-top: 56px;
+        position: absolute;
+        top: 54px;
+        right: 0px;
+
+        li {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-transform: uppercase;
+          padding: 1rem;
+          cursor: pointer;
+          font-size: 19px;
+          border-bottom: 2px solid yellow;
+          text-align: center;
+          font-weight: bold;
+          &:hover{
+            background-color: #f4db3a;
+            color:#fff;
+          }
+        }
+      }
+      margin-bottom: 0;
+      li {
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 1rem;
+        cursor: pointer;
+        font-size: 14px;
+        &:hover {
+          color: $yellow;
+        }
+      }
+      & {
+        @include break_point(mobil) {
+          display: none;
+        }
+        @include break_point(xsmobil) {
+          display: none;
+        }
+      }
+    }
+
+    .toggle_btn {
+      width: 49px;
+      height: 36px;
+      text-align: center;
+      background-color: #f4db3a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: -4px;
+      padding: 0;
+      box-shadow: 0px 0 2px #fff;
+      border-radius: 4px;
+      cursor: pointer;
+      display: none;
+      span {
+        width: 40px;
+        background-color: #fff;
+        height: 4px;
+        margin-bottom: 3px;
+        cursor: pointer;
+      }
+      & {
+        @include break_point(xsmobil) {
+          display: flex;
+        }
+        @include break_point(mobil) {
+          display: flex;
+        }
+      }
+    }
+  }
+  .landing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $main_font;
+    .start {
+      width: 140px;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      background-color: #f4db3a;
+      color: #000;
+      margin-top: 30px;
+      box-shadow: 1px 1px 12px 1px #fff;
+      font-weight: 700;
+      font-family: "Montserrat";
+      text-transform: capitalize;
+    }
+  }
+}

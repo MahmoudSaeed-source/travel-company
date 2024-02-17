@@ -1,0 +1,105 @@
+.getHotels {
+  width: 100%;
+  background-color: $yellow;
+  font-family: $main_font;
+  padding: 50px;
+  .title_section {
+    font-weight: bolder;
+  }
+  .form {
+    label {
+      font-size: 20px;
+      font-family: $main_font;
+      font-weight: bold;
+      @include break_point(xsmobil) {
+        margin-right: 20px;
+        width: 150px;
+        text-align: left;
+        margin-top: 5px;
+      }
+      @include break_point(mobil) {
+        margin-right: 20px;
+        width: 150px;
+        text-align: left;
+        margin-top: 5px;
+      }
+      @include break_point(medium) {
+        margin-right: 20px;
+        width: 150px;
+        text-align: left;
+        margin-top: 5px;
+      }
+    }
+    input {
+      border: 0;
+      outline: 0;
+      border-radius: 4px;
+      font-size: 15px;
+      padding: 5px;
+      width: 200px;
+      @include break_point(xsmobil) {
+        margin-top: 5px;
+      }
+      @include break_point(mobil) {
+        margin-top: 5px;
+      }
+      @include break_point(medium) {
+        margin-top: 5px;
+      }
+      &[type="number"] {
+        width: 80px;
+        text-align: center;
+        @include break_point(xsmobil) {
+          width: 200px;
+          margin-top: 5px;
+        }
+        @include break_point(mobil) {
+          width: 200px;
+          margin-top: 5px;
+        }
+        @include break_point(medium) {
+          width: 200px;
+          margin-top: 5px;
+        }
+      }
+      &::placeholder {
+        text-align: center;
+        text-transform: uppercase;
+        color: #333;
+      }
+      &:focus::placeholder {
+        color: transparent;
+      }
+    }
+    button {
+      width: 167px;
+      height: 33px;
+      outline: none;
+      border: none;
+      border-radius: 4px;
+      margin-top: 28px;
+      background-color: #333;
+      color: #fff;
+      font-size: 20px;
+      font-family: 600;
+      font-family: $main_font;
+      &:hover{
+        color:$yellow
+      }
+      @include break_point(medium){
+        margin-left: 174px;
+      }
+    }
+    & {
+      @include break_point(xsmobil) {
+        flex-wrap: wrap;
+      }
+      @include break_point(mobil) {
+        flex-wrap: wrap;
+      }
+      @include break_point(medium) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

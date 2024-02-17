@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>ExportTravel</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <nav>
+        <div class="container">
+          <div
+            class="nav_icon d-flex justify-content-around align-items-center p-2 p-top-4"
+          >
+            <div class="icon_left d-flex justify-content-between ">
+              <div class="phon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
+                >
+                  <path
+                    d="M17.707 12.293a.999.999 0 0 0-1.414 0l-1.594 1.594c-.739-.22-2.118-.72-2.992-1.594s-1.374-2.253-1.594-2.992l1.594-1.594a.999.999 0 0 0 0-1.414l-4-4a.999.999 0 0 0-1.414 0L3.581 5.005c-.38.38-.594.902-.586 1.435.023 1.424.4 6.37 4.298 10.268s8.844 4.274 10.269 4.298h.028c.528 0 1.027-.208 1.405-.586l2.712-2.712a.999.999 0 0 0 0-1.414l-4-4.001zm-.127 6.712c-1.248-.021-5.518-.356-8.873-3.712-3.366-3.366-3.692-7.651-3.712-8.874L7 4.414 9.586 7 8.293 8.293a1 1 0 0 0-.272.912c.024.115.611 2.842 2.271 4.502s4.387 2.247 4.502 2.271a.991.991 0 0 0 .912-.271L17 14.414 19.586 17l-2.006 2.005z"
+                  ></path>
+                </svg>
+                <span>01234567890</span>
+              </div>
+              <div class="mail">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
+                >
+                  <path
+                    d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"
+                  ></path>
+                </svg>
+                <span>freetravel@gamil.com</span>
+              </div>
+            </div>
+            <div
+              class="social_media_links_center  d-flex align-items-center justify-content-end"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
+              >
+                <path
+                  d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
+              >
+                <path
+                  d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
+              >
+                <path
+                  d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"
+                ></path>
+                <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                <path
+                  d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
+              >
+                <path
+                  d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="icon_right d-flex justify-content-end align-items-center"
+            >
+              <div class="login-sigin">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  style="transform: "
+                  ;msFilter:;
+                >
+                  <path
+                    d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"
+                  ></path>
+                </svg>
+                <span>signup</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  style="transform: "
+                  ;msFilter:;
+                >
+                  <path
+                    d="M3.433 17.325 3.079 19.8a1 1 0 0 0 1.131 1.131l2.475-.354C7.06 20.524 8 18 8 18s.472.405.665.466c.412.13.813-.274.948-.684L10 16.01s.577.292.786.335c.266.055.524-.109.707-.293a.988.988 0 0 0 .241-.391L12 14.01s.675.187.906.214c.263.03.519-.104.707-.293l1.138-1.137a5.502 5.502 0 0 0 5.581-1.338 5.507 5.507 0 0 0 0-7.778 5.507 5.507 0 0 0-7.778 0 5.5 5.5 0 0 0-1.338 5.581l-7.501 7.5a.994.994 0 0 0-.282.566zM18.504 5.506a2.919 2.919 0 0 1 0 4.122l-4.122-4.122a2.919 2.919 0 0 1 4.122 0z"
+                  ></path>
+                </svg>
+                <span>login</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nave_logo_links">
+          <div class="container">
+            <div
+              class="log_links d-flex justify-content-between align-items-center"
+            >
+              <div class="logo d-flex flex-column col-2">
+                <h4 class="text-left ">
+                  Expl<span class="one">o</span><span class="two">o</span>re
+                </h4>
+                <h6 class="text-left">certive create web sit</h6>
+              </div>
+              <ul class="links  list-unstyled align-items-center text-end col-10">
+                <li>home</li>
+                <li>destination</li>
+                <li>discount</li>
+                <li>about</li>
+                <li>blog</li>
+                <li>contact</li>
+              </ul>
+              <div class="toggle_btn  col-1">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="landing text-center">
+        <h2>Start Your Greatest</h2>
+        <h4>Adventure with us!</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+          labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <button class="start">start now</button>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start get your hotel -->
+    <div class="getHotels" >
+      <div class="container">
+        <h2 class="title_section text-center p-5 text-uppercase ">
+          find hotels
+        </h2>
+        <div class="form d-flex justify-content-center align-items-center">
+          <div class="location ">
+            <label class="name">where</label >
+            <input type="text" placeholder="location">
+          </div>
+          <div class="chech_in">
+            <label class="name" >chech in</label >
+            <input type="date">
+          </div>
+          <div class="chech-out">
+            <label class="name" >chech out</label >
+            <input type="date" >
+          </div>
+          <div class="adult">
+            <label class="name" >adult</label >
+            <input type="number"value="1"min="0" >
+          </div>
+          <div class="chlidren">
+            <label class="name" >child</label >
+            <input type="number"value="1"min="0" >
+          </div>
+          <button>check</button>
+        </div>
+      </div>    
+    </div>
+    <!-- end get your hotel -->
+    <!-- start trusted -->
+    <div class="trusted d-flex justify-content-start col-12 ">
+      <div class="imag col-md-6 ">
+        <img src="images/Layer 7.png" alt="tran">
+      </div>
+      <div class="discrpation d-flex align-items-start justify-content-around flex-column col-md-6  ">
+        <div class="title ">
+          <h2 class="fw-bolder">Trusted Since 2001</h2>
+          <h4 class="fw-bold">We are Exploore </h4>
+          <p class="fs-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, perferendis obcaecati! Odit, quos sit quas doloribus iure doloremque numquam repellat a accusantium ipsa delectus in, voluptatem facere voluptas facilis? Quia!</p>
+        </div>
+          <div class="don d-flex"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg></span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p></div>
+          <div class="don d-flex " ><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg></span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p></div>
+          <div class="don d-flex "><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg></span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p></div>
+      
+      </div>
+    </div>
+    <!-- end trusted -->
+    <!-- start our best serves  -->
+    <div class="our_serves text-center mt-5">
+      <h2>Our Best Services</h2>
+      <h4>We are Travel Agent</h4>
+      <div class="container mt-5">
+        <div class="way_travel d-flex justify-content-start align-items-center">
+          <div class="left_way_travel ">
+            <div class="to_travel  d-flex flex-row mt-4 ">
+              <div class="logo d-flex  me-5">
+                <i class="fa-solid fa-plane-departure"></i>
+              </div>
+              <div class="data_section text-start">
+                <h5>Lorem Ipsum Dolor Sit</h5>
+                <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus </h6>
+              </div>
+            </div>
+            <div class="to_travel d-flex flex-row mt-4 ">
+              <div class="logo d-flex  me-5">
+                <i class="fa-solid fa-hotel"></i>
+              </div>
+              <div class="data_section text-start">
+                <h5>Lorem Ipsum Dolor Sit</h5>
+                <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus </h6>
+              </div>
+            </div>
+            <div class="to_travel d-flex flex-row mt-4 ">
+              <div class="logo d-flex  me-5">
+                <i class="fa-solid fa-utensils"></i>
+              </div>
+              <div class="data_section text-start">
+                <h5>Lorem Ipsum Dolor Sit</h5>
+                <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus </h6>
+              </div>
+            </div>
+          </div>
+          <div class="right_way_travel">
+            <div class="to_travel d-flex flex-row mt-4 ">
+              <div class="logo d-flex  me-5">
+                <i class="fa-solid fa-train-subway"></i>
+              </div>
+              <div class="data_section text-start">
+                <h5>Lorem Ipsum Dolor Sit</h5>
+                <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus </h6>
+              </div>
+            </div>
+            <div class="to_travel d-flex flex-row mt-4 ">
+              <div class="logo d-flex  me-5">
+                <i class="fa-solid fa-bicycle"></i>
+              </div>
+              <div class="data_section text-start">
+                <h5>Lorem Ipsum Dolor Sit</h5>
+                <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus </h6>
+              </div>
+            </div>
+            <div class="to_travel d-flex flex-row mt-4 ">
+              <div class="logo d-flex  me-5">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <div class="data_section text-start">
+                <h5>Lorem Ipsum Dolor Sit</h5>
+                <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus </h6>
+              </div>
+            </div>
+           
+          </div>
+        </div>     
+                </div>
+      </div>
+    </div>
+    <!-- end our best serves  -->
+
+    <!-- start travel price -->
+    
+      <div class="travel_price text-center pt-5 " >
+      <div class="container">
+        <div class="item_price d-flex justify-content-around align-items-center">
+          <div class="travel pt-4">
+            <i class="fa-solid fa-car"></i>
+            <p class="title text-center fs-5 fw-bolder" >Low Budget Trip </p>
+            <p class="price text-center  fw-bolder d-flex align-items-center justify-content-center">$500</p>
+            <div class="check_travel">
+              <span class="check_mark"><i class="fa-solid fa-check"></i></span>
+              <span>Lorem Ipsum Dolor Sit</span>
+            </div>
+            <div class="check_travel ">
+              <span class="check_mark"><i class="fa-solid fa-check"></i></span>
+              <span>Lorem Ipsum Dolor Sit</span>
+            </div>
+            <div class="check_travel ">
+              <span class="check_mark"><i class="fa-solid fa-check"></i></span>
+              <span>Lorem Ipsum Dolor Sit</span>
+            </div>
+           
+            <div class="check_travel">
+              <span class="check_mark"><i class="fa-solid fa-check"></i></span>
+              <span>Lorem Ipsum Dolor Sit</span>
+            </div>
+          </div>
+          <div class="travel pt-4">
+            <i class="fa-solid fa-train-subway"></i>
+            <p class="title text-center fs-5 fw-bolder" >Low Budget Trip </p>
+            <p class="price text-center  fw-bolder d-flex align-items-center justify-content-center">$800</p>
+            <div class="check_travel">
+              <span class="check_mark"><i class="fa-solid fa-check"></i></span>
+              <span>Lorem Ipsum Dolor Sit</span>
+            </div>
+            <div class="check_travel ">
+              <span class="check_mark"><i class="fa-solid fa-check"></i></span>
+              <span>Lorem Ipsum Dolor Sit</span>
+            </div>
+            <div class="check_travel ">
+              <span class="check_mark"><i class="fa-solid fa-check"></i></span>
+              <span>Lorem Ipsum Dolor Sit</span>
+            </div>
+           
+            <div class="check_travel">
+              <span class="check_mark"><i class="fa-solid fa-check"></i></span>
+              <span>Lorem Ipsum Dolor Sit</span>
+            </div>
+          </div>
+          <div class="travel pt-4">
+            <i class="fa-solid fa-plane-departure"></i>
+            <p class="title text-center fs-5 fw-bolder" >Low Budget Trip </p>
+            <p class="price text-center  fw-bolder d-flex align-items-center justify-content-center">$1000</p>
+            <div class="check_travel">
+              <span class="check_mark"><i class="fa-solid fa-check"></i></span>
+              <span>Lorem Ipsum Dolor Sit</span>
+            </div>
+            <div class="check_travel ">
+              <span class="check_mark"><i class="fa-solid fa-check"></i></span>
+              <span>Lorem Ipsum Dolor Sit</span>
+            </div>
+            <div class="check_travel ">
+              <span class="check_mark"><i class="fa-solid fa-check"></i></span>
+              <span>Lorem Ipsum Dolor Sit</span>
+            </div>
+           
+            <div class="check_travel">
+              <span class="check_mark"><i class="fa-solid fa-check"></i></span>
+              <span>Lorem Ipsum Dolor Sit</span>
+            </div>
+          </div>
+          
+        </div>
+        <h2 class="fw-bolder ">Trusted Since 2001</h2>
+        <h4 class="fw-bold">We are Exploore </h4>
+       
+      </div>
+      <div class="footer_section"></div>
+      </div>
+      
+    <!-- end travel price -->
+<!-- start plesa  -->
+    <div class="pleas mt-5">
+      <div class="container">
+        <div class="pleas_section d-flex justify-content-start  ">
+          <div class="image_section">
+            <img src="images/Place your Image2.png" alt="Place">
+          </div>
+          <div class="text-section  ms-5">
+            <h2 class="fw-bolder ">Trusted Since 2001</h2>
+            <h4 class="fw-bold">We are Travel Agent</h4>
+            <div class="icon_text d-flex">
+              <div class="icon_one">
+                <i class="fa-solid fa-plane-departure"></i>
+                <span>Flight</span>
+              </div>
+              <div class="icon_two">
+                <i class="fa-solid fa-plane-departure"></i>
+                <span>Flight</span>
+              </div>
+              <div class="icon_three">
+                <i class="fa-solid fa-plane-departure"></i>
+                <span>Flight</span>
+              </div>
+            </div>
+            <p class="mt-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam iure dolores fuga porro nihil voluptate sint labore ullam culpa quisquam quaerat nostrum veritatis eveniet eligendi, illum quos voluptates corporis ducimus.</p>
+          <button >click here</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end pleas -->
+   <div class="pick_go text-center mt-5 pt-5">
+    <h2 class="fw-bolder ">Pack and Go</h2>
+    <h4 class="fw-bold">Awesome Tours </h4>
+    <div class="trip d-flex align-items-center justify-content-center">
+      <div class="travel_one d-flex flex-column">
+        <div class="text_card">
+          <p class="days ">7 Day + 6 Night </p>
+          <h5>New York + Paris</h5>
+          <p class="text-center ">Lorem ipsum, dolor sit amet consectetur adipisicing elitlodlhsdjhjfkjhafhjlahfjkhfjkhajkfhasmnbbfiuaeyfu. </p>
+          <h6 class="mt-3">$600</h6>
+          <button class="start" >click here</button>
+        </div>
+      </div>
+      <div class="travel_two d-flex flex-column">
+        <div class="text_card">
+          <p class="days ">7 Day + 6 Night </p>
+          <h5>New York + Paris</h5>
+          <p class="text-center ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.dafejw4piutgjskjiojwigviojesksljgiowiflvjio </p>
+          <h6 class="mt-3">$600</h6>
+          <button class="start" >click here</button>
+        </div>
+      </div>
+      <div class="travel_three d-flex flex-column">
+        <div class="text_card text-center">
+          <p class="days ">7 Day + 6 Night </p>
+          <h5>New York + Paris</h5>
+          <p class="text-center ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.tfekjhjdhfu2yhofoiaehiofhiofhioehilheioh </p>
+          <h6 class="mt-3">$600</h6>
+          <button class="start" >click here</button>
+        </div>
+      </div>
+    </div>
+    
+   </div>
+    <!-- end pick-go -->
+    <!-- start go expooler -->
+    <div class="expooler text-center  pt-5">
+      <h2 class="fw-bolder ">Trusted Since 2001</h2>
+      <h4 class="fw-bold">GO EXPLOORE </h4>
+      <div class="container ">
+        <div class="expooler_container d-flex align-items-center justify-content-between mt-4">
+          <div class="travel_expooler d-flex flex-column ">
+            <div class="img_expooler">
+              <img src="images/san-francisco-artwork-trams-street-hills.jpg" alt="">
+            </div>
+            <div class="text_expooler">
+              <button class="start">start Now </button>
+              <h5 class="fw-bolder pt-5">Lorem ipsum dolor sit amet</h5>
+              <p class=""fs-5 >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="travel_expooler d-flex flex-column">
+            <div class="img_expooler">
+              <img src="images/VW-camper-beach-holiday-travel-self-drive-hire.jpg" alt="">
+            </div>
+            <div class="text_expooler">
+              <button class="start">start Now </button>
+              <h5 class="fw-bolder pt-5">Lorem ipsum dolor sit amet</h5>
+              <p class=""fs-5 >Lorem ipsum dolor sit amet consectetur adipisicing elit.e .</p>
+            </div>
+          </div>
+          <div class="travel_expooler d-flex flex-column ">
+            <div class="img_expooler">
+              <img src="images/viset.jfif" alt="">
+              
+            </div>
+            <div class="text_expooler">
+              <button class="start">start Now</button>
+              <h5 class="fw-bolder pt-5">Lorem ipsum dolor sit amet</h5>
+              <p class=""fs-5 >Lorem ipsum dolor sit amet consectetur doloremque debitis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- end go expooler -->
+    <!--start newyork -->
+    <div class="newyork pt-5">
+      <div class="container">
+        <div class="newyork_travel text-center d-flex justify-content-center align-items-center">
+          <div class="newyork_img">
+            <img src="images/tree.png" alt="">
+          </div>
+          <div class="newyork_text d-flex flex-column justify-content-start align-items-start">
+            <h4 class="fw-bolder ">New York + Paris</h4>
+            <h6 class="fw-bold">7 Day + 6 Night </h6>
+            <div class="icon d-flex align-items-start justify-content-between flex-row">
+              <div class="icons d-flex flex-column">
+                <p><i class="fa-solid fa-plane-departure"></i></p> 
+                <p class="name text-uppercase">Flight </p>
+              </div>
+              <div class="icons d-flex flex-column">
+                <p><i class="fa-solid fa-hotel"></i></i></p> 
+                <p class="name text-uppercase">hotle </p>
+              </div>
+              <div class="icons d-flex flex-column">
+                <p><i class="fa-solid fa-car"></i></p> 
+                <p class="name text-uppercase">transport </p>
+              </div>         
+            </div>
+            <p class="detailes_p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi provident laborum.</p>
+            <div class="price_button d-flex align-items-start ">
+              <h2 class="fw-bolder">$1000</h2>
+              <button class="start text-uppercase">book now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end newyork -->
+    <!-- start cutstomers -->
+    <div class="cutstomers text-center pt-5">
+      <h2>Customer Reviews</h2>
+      <h4 class="me-5 text-center ms-5">We are Travel Agent</h4>
+      <p class="text-center fs-5 mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo voluptates repudiandae distinctio doloribus ut provident iusto consequatur ipsum deserunt corrupti. Ex fugit, consequuntur culpa earum aspernatur quis vel dolorem illum.</p>
+      <div class="starts d-flex align-items-center justify-content-center mt-5">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="avater d-flex align-items-center justify-content-center mt-5">
+        <div class="avater_img">
+          <img src="images/75540129_10215161836507958_3788588714771349504_o.jpg" alt="">
+        </div>
+        <div class="names">
+          <p class="text-uppercase fw-bolder">mahmoud</p>
+          <p class="text-uppercase fw-bolder">saeed</p>
+        </div>
+      </div>
+    </div>
+    <!-- end cutstomers -->
+    <!-- start contact -->
+    <div class="contact text-center pt-5">
+      <h2 class="fw-bolder ">Start Your Journey</h2>
+      <h4>Contact us </h4>
+      <div class="location">
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+    </div>
+    <!-- end contact -->
+    <!-- start contactway -->
+    <div class="contaceway pt-5">
+      <div class="container">
+        <div class="contact-tooles d-flex align-items-center justify-content-center">
+          <div class="way d-flex  justify-content-center">
+            <div class="icon_mail">
+              <i class="fa-solid fa-envelope-open"></i>
+            </div>
+            <div class="tools">
+              <p class="name_toole text-uppercase">Email</p>
+              <p class="content text-uppercase fw-bolder">mahmoudsais.wd@gmail.com</p>
+              <p class="content text-uppercase fw-bolder">ms2481988@gmail.com</p>
+            </div>
+          </div>
+          <div class="way d-flex  justify-content-center">
+            <div class="icon_mail">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <div class="tools">
+              <p class="name_toole text-uppercase" >call us</p>
+              <p class="content text-uppercase fw-bolder">01010978391</p>
+              <p class="content text-uppercase fw-bolder">01142974302</p>
+            </div>
+          </div>
+          <div class="way d-flex  justify-content-center">
+            <div class="icon_mail">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <div class="tools">
+              <p class="name_toole">ADDRESS</p>
+              <p class="content text-uppercase fw-bolder">mahmoudsais.wd@gmail.com</p>
+              <p class="content text-uppercase fw-bolder">ms2481988@gmail.com</p>
+            </div>
+          </div>
+        
+        </div>
+        <div class="social_media d-flex align-items-center justify-content-center">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-digg"></i>
+        </div>
+      </div>
+      
+    </div>
+    <!-- end contactway -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="Js/all.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

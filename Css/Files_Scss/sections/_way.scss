@@ -1,0 +1,58 @@
+.way_travel{
+    &{
+        @include break_point(xsmobil){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        @include break_point(mobil){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+          
+        }
+        @include break_point(medium){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+            
+        }
+    }
+        .to_travel{
+            width: 75%;
+            &{
+                @include break_point(xsmobil){
+                    width: 100%;
+                    justify-content: center;
+                }
+                @include break_point(mobil){
+                    width: 100%;
+                    justify-content: center;
+                }
+                @include break_point(medium){
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+            svg{
+                font-size: 40px;
+                color:$light_blue !important;
+            }
+        .data_section{
+            h5{
+                font-size: 16px !important;
+                font-weight: 700;
+            }
+            h6{
+                font-size: 14 !important;
+            }
+        }
+        }
+   
+}
